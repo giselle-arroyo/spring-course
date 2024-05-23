@@ -11,6 +11,14 @@ public class Producto {
     @Column(name="id_producto")//cuando el nombre de columan no se use de la manera que esta en la table
     private Integer idProducto;
 
+    public Categoria getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(Categoria categoria) {
+        this.categoria = categoria;
+    }
+
     private String nombre;
 
     @Column(name="id_categoria")
