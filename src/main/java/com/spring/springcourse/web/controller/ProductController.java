@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
-
+//http://localhost:8090/spring-course/products/all
 @RestController
 @RequestMapping("/products")
 public class ProductController {
