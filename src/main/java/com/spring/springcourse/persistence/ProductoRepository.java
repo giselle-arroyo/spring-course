@@ -5,6 +5,7 @@ import com.spring.springcourse.domain.repository.ProductRepository;
 import com.spring.springcourse.persistence.crud.ProductoCrudRepository;
 import com.spring.springcourse.persistence.entity.Producto;
 import com.spring.springcourse.persistence.mapper.ProductMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -12,7 +13,10 @@ import java.util.Optional;
 
 @Repository //indicamos a Spring que esta clase se encarga de interactuar con la base de datos
 public class ProductoRepository implements ProductRepository {
+    @Autowired
     private ProductoCrudRepository productoCrudRepository;
+    ///se debe estar seguro que el objeto es u componente de Spring
+    @Autowired
     private ProductMapper mapper;
 
 
